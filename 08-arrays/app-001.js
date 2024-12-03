@@ -14,10 +14,22 @@ x = numberList[1] + numberList[3];
 x = `Mi fruta preferida es ${frutas[2]}`;
 x = frutas.length;
 frutas[0] = "fresa";
-frutas[frutas.length] = ["piña", "melón"];
+frutas[frutas.length] = "piña";
 frutas[frutas.length] = "cacahuetes";
 
-frutas.unshift("Sandia");
 
-console.log(frutas);
-console.log(typeof frutas);
+let verdura = "col";
+let verduraPreferida = verdura;
+verdura = "patata";
+
+console.log("verdura vale", verdura);
+console.log("preferida vale", verduraPreferida);
+
+
+const deportes = ["futbol", "padel", "baloncesto"];
+const deportesFavoritos = deportes; // no podemos copiar arrays directamente
+deportesFavoritos[0] = "golf";
+
+
+console.log("Lista de deportes", deportes);
+console.log("Lista de deportes favoritos", deportesFavoritos);
