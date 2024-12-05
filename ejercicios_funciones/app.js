@@ -81,13 +81,10 @@
 
 //Resultado: "puente hay semana de fin este"
 
-function reverseWords(text) {
-    const texArr = text.split("").reverse().join(" ");
+function reverseWordsColl(text) {
+    const texArr = text.split(" ").reverse().join(" ");
   } 
   
- 
- 
-
 
 
 
