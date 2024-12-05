@@ -26,5 +26,16 @@ let resultado = suma(1,2);
 console.log(resultado);
 
 //escribe una funcion que pase de euros a dolares
-let cambio = multiplicacion(1 , 1.05);
-console.log(cambio);
+function euroToDolar(cantidad){
+  const usd = cantidad*1.05
+  return usd;
+} 
+
+let euros = prompt("introduce cantidad de euros: ")
+
+alert(euroToDolar(euros))
+
+function pedirEuros(){
+  let euros = prompt("introduce la cantidad euros: ")
+  alert(euroToDolar(euros))
+}
