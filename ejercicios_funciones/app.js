@@ -28,9 +28,25 @@ const lista = [2,5,65,34,1];
 let numMax = getMaxValue(lista);
 
 
-
-
 //3
+function cuentaVocales(frase) {
+    let numVocales = 0;
+    const vocales = "aeiouAEIOU";
+
+ for (let i = 0; i < frase.length; i++) {
+   for (let j = 0; j < vocales.length; j++) {
+     if (frase[i] === vocales[j]) {
+      numVocales++;
+      break;
+     }
+   }
+ }
+ return numVocales;
+}
+
+
+
+
 // function contarVocales(cadena) { let cuenta = 0; const vocales = 'aeiouAEIOU'; 
 //     for (let i = 0; i < cadena.length; i++) { 
 //         if (vocales.indexOf(cadena[i]) !== -1) { cuenta++; } } return cuenta; }
